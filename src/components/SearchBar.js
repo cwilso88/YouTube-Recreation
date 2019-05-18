@@ -5,6 +5,10 @@ class SearchBar extends Component {
         term: ''
     }
 
+    onInputChange = () => {
+
+    }
+
   render() {
     return (
     <div>
@@ -17,6 +21,7 @@ class SearchBar extends Component {
                     <input 
                         className="prompt" 
                         value={this.state.term}
+                        onChange={this.onInputChange}
                         type="text" 
                         placeholder="Search for videos..."
                         style={{width: '400px'}}
