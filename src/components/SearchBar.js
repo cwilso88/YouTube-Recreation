@@ -11,10 +11,20 @@ class SearchBar extends Component {
         })
     }
 
+    onFormSubmit = (e) => {
+        e.preventDefault();
+
+        //TODO: CALLBACK FROM PARENT ELEMENT
+    }
+
   render() {
     return (
     <div>
-    <form className="ui segment" style={{top: '50px'}}>
+    <form 
+        className="ui segment" 
+        style={{top: '50px'}}
+        onSubmit={this.onFormSubmit}
+    >
     
             <div className="ui search" style={{position: 'relative', left: '30%'}}>
             <label style={{display: 'block', fontSize: '20px', paddingBottom: '10px'}}>Video Search</label>
