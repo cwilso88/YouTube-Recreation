@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 
 class SearchBar extends Component {
+    state = {
+        term: ''
+    }
+
   render() {
     return (
     <div>
@@ -12,6 +16,7 @@ class SearchBar extends Component {
                     
                     <input 
                         className="prompt" 
+                        value={this.state.term}
                         type="text" 
                         placeholder="Search for videos..."
                         style={{width: '400px'}}
