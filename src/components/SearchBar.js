@@ -40,7 +40,7 @@ class SearchBar extends Component {
                     ></input>
                     <i className="search icon"></i>
                 </div>
-                <div class="results"></div>
+                <div className="results"></div>
             </div>
             </form>
       </div>
