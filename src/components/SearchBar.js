@@ -14,7 +14,7 @@ class SearchBar extends Component {
     onFormSubmit = (e) => {
         e.preventDefault();
 
-        //TODO: CALLBACK FROM PARENT ELEMENT
+        
     }
 
   render() {
