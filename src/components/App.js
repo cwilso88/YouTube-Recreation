@@ -3,12 +3,14 @@ import SearchBar from "./SearchBar";
 import youtube from '../api/youtube';
 
 class App extends Component {
-  onTermSubmit = (term) => {
-    youtube.get('/search', {
+  onTermSubmit = async (term) => {
+    const response= await youtube.get('/search', {
       params: {
         q: term
       }
     });
+
+    console.log(response.data.items);
   };
 
   render() {
