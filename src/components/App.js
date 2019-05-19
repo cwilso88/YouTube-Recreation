@@ -10,6 +10,11 @@ class App extends Component {
     videos: [],
     selectedVideo: null
   }
+
+  componentDidMount() {
+    this.onTermSubmit('Luxury homes');
+  }
+  
   onTermSubmit = async (term) => {
     const response= await youtube.get('/search', {
       params: {
