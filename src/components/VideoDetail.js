@@ -13,7 +13,7 @@ const VideoDetail = ({ video }) => {
       return(
         <div>
             <div className="ui embed">
-                <iframe src={`https://www.youtube.com/embed/${video.id.videoId}`} frameborder="0"></iframe>
+                <iframe title="youtube search" src={`https://www.youtube.com/embed/${video.id.videoId}`} frameborder="0"></iframe>
             </div>
             <div className="ui segment">
                 <h4 className="ui header">
