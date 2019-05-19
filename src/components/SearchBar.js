@@ -36,7 +36,6 @@ class SearchBar extends Component {
                         onChange={this.onInputChange}
                         type="text" 
                         placeholder="Search for videos..."
-                        style={{width: '400px'}}
                     ></input>
                     <i className="search icon"></i>
                 </div>
