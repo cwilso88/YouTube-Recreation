@@ -22,7 +22,7 @@ class SearchBar extends Component {
     <div>
     <form 
         className="ui segment" 
-        style={{top: '50px'}}
+        style={{top: '30px'}}
         onSubmit={this.onFormSubmit}
     >
     
